@@ -283,6 +283,18 @@ export default {
         )
         this.showMenu = false
         return
+      } else if (mutation.name === 'info') {
+        this.$eventBus.emit(
+          'add-view',
+          {
+            name: 'Info',
+            initialOptions: {
+              requestedTokens: this.node.tokens || undefined
+            }
+          }
+        )
+        this.showMenu = false
+        return
       }
 
       this.dialog = true
