@@ -57,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 <script>
 import gql from 'graphql-tag'
 import { mapGetters } from 'vuex'
-import { getPageTitle } from '@/utils/index'
+import { getPageTitle } from '@/router/index'
 import graphqlMixin from '@/mixins/graphql'
 import subscriptionComponentMixin from '@/mixins/subscriptionComponent'
 import SubscriptionQuery from '@/model/SubscriptionQuery.model'
