@@ -153,18 +153,21 @@ class InfoCallback extends DeltasCallback {
    * @param {Results} results
    */
   constructor (task) {
+    console.log('info callback', task)
     super()
     this.task = task
   }
 
   onAdded (added, store, errors) {
-    Object.assign(this.task, added.taskProxies[0])
+    console.log(this.task)
+    console.log(added)
+    // Object.assign(this.task, added.taskProxies[0])
   }
 
   onUpdated (updated, store, errors) {
-    if (updated?.taskProxies) {
-      Object.assign(this.task, updated.taskProxies[0])
-    }
+    // if (updated?.taskProxies) {
+    //   Object.assign(this.task, updated.taskProxies[0])
+    // }
   }
 
   onPruned (pruned) {

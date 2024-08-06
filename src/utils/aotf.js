@@ -321,7 +321,8 @@ export const dummyMutations = [
     description: 'View task information.',
     args: [],
     _appliesTo: [cylcObjects.Namespace],
-    _requiresInfo: true
+    _requiresInfo: false,
+    _validStates: WorkflowStateNames,
   },
 ]
 
